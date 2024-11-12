@@ -14,16 +14,16 @@
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
 
         <a-assets>
-            <a-asset-item id="modelo" src="Modelos/flower_pot.glb"></a-asset-item>
-            <a-asset-item id="modelo2" src="Modelos/minecraft_fender_stratocaster_hss_candy_red.glb"></a-asset-item>
+            <a-asset-item id="Flower" src="Modelos/flower_pot.glb"></a-asset-item>
+            <a-asset-item id="Guitar" src="Modelos/minecraft_fender_stratocaster_hss_candy_red.glb"></a-asset-item>
         </a-assets>
 
         <a-marker type="barcode" value="07" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
-            <a-entity gltf-model="#modelo" scale="20 20 10" class="clickable" gesture-handler> </a-entity>
+            <a-entity gltf-model="#Flower" scale="20 20 10" class="clickable" gesture-handler> </a-entity>
         </a-marker>
 
         <a-marker type="barcode" value="17" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
-            <a-entity gltf-model="#modelo2" scale="5 5 5" class="clickable" gesture-handler></a-entity>
+            <a-entity gltf-model="#Guitar" scale="5 5 5" class="clickable" gesture-handler></a-entity>
         </a-marker>
 
         <a-entity camera></a-entity>
